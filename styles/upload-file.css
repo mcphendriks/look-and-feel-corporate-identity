@@ -6,66 +6,71 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(72, 89, 72);
 }
-
-/* Responsible for the navigatie bar */
-
-/* .nav-bar {
-  width: 100%;
-  background-color: white;
-  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.15);
-  padding-left: 20px;
-  padding-right: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: le;
-  text-decoration: none;
-  position: fixed;
-  z-index: 1;
-}
-
-.nav-bar-logo {
-  display: inline-block;
-}
-
-.nav-bar-li {
-  list-style: none;
-  display: flex;
-}
-
-.nav-bar-item a {
-  /* display: inline-block; 
-  display: flex;
-  padding: 10px 10px;
-  text-decoration: none;
-  color: #333565;
-  font-weight: bold;
-}
-
-.nav-bar-item:hover a {
-  color: #e2793b;
-}
-/* Responsible for hamburger menu / hidden for desktop version  
-
-.menu-icon {
-  display: none;
-  font-size: 1.5rem;
-  color: rgb(26, 26, 77);
-  transition: all 0.3s ease;
-} */
 
 .top-nav {
-  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
   box-shadow: 1px 0 10px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
   color: #333565;
+}
+
+.top-nav a,
+.top-nav li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* LOGO */
+.top-nav img {
+  max-width: 9rem;
+}
+
+/* NAVBAR LIST  */
+.nav-li {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
-.top-nav ul li a {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  padding: 14px 16px;
-  font-size: 1.5rem;
+.nav-li li:hover {
+  color: #e2793b;
+  transition: 0.3s ease;
+}
+
+/* MAIN FORM  */
+.main-form {
+  display: flex;
+  transition: all 0.2s;
+  flex-direction: column;
+  background-color: white;
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 1rem;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.main-form h1 {
+  display: flex;
+  margin: 0 auto;
+  color: rgb(72, 89, 72);
+  font-size: 32px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+  border: none;
+  transition: all 3s;
+  padding: 1rem 1rem 0;
+  position: relative;
+  background-color: rgb(209, 217, 210);
 }
