@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="styles/Contact form.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact form</title>
+</head>
+
+<body>
+  <header>
+    <a href="/"><img src="https://hvacommunity.sirv.com/Buurtcampus%20Oost-logo.svg" class="logo" alt="logo"></a>
+    <h1 class="header-title">Hoi, Wat leuk dat je een plantje wilt ruilen met je buurtgenoot!</h1>
+    <h2 class="header-intro">Doorloop de onderstaande 3 stappen voor het ruilen van je plantje</h2>
+  </header>
+
+
+
+  <main class="regForm">
+
+    <div id="step-row">
+      <div id="progress"></div>
+         <li class="step-col"><small>Stap 1</small></li>
+         <li class="step-col"><small>Stap 2</small></li>
+         <li class="step-col"><small>Stap 3</small></li>
+    </div>   
+
+    <!-- <h1 class="form-title">Gekozen plantje</h1> -->
+    
+    <!-- One "tab" for each step in the form: -->
+    <form class="tab1">
+      <h1 class="form-title">Gekozen plantje</h1>
+      <span class="content-tab1">
+      <img src="https://www.plantje.nl/wp-content/uploads/2021/09/Bonsai-Ficus-Ginseng-p17-2-600x600.jpg.webp"
+                class="img-plant" alt="plant">
+                <aside>
+                  <h1 class="aside-title">Zonnenbloem</h1>
+                  <span class="aside-content">
+                    <!-- <div class="style-content"> -->
+                   <i class="material-symbols-outlined">sunny</i><break>
+                   <h2>Gemiddeld licht</h2> 
+                  <!-- </div> -->
+                  </span>
+
+                  <span class="aside-content">
+                    <i class="material-symbols-outlined">home</i>
+                    <h2>Binnenplant</h2>
+                  </span>
+
+                  <span class="aside-content">
+                    <i class="material-symbols-outlined">potted_plant</i>
+                    <h2>Plant moet gepoot worden</h2>
+                  </span>
+                  
+                </aside>
+      </span>
+   
+            <div class="btn-box">
+                <button type="button">Terug</button>
+                <button type="button">Volgende</button>
+            </div>
+         
+    </form>
+
+   
+
+    <form class="tab2">
+      <h1 class="form-title">Hoe Ruilen?</h1>
+            <div class="btn-box">
+                <button type="button">Terug</button>
+                <button type="button">Volgende</button>
+            </div>
+    </form>
+
+   
+
+    <form class="tab3">
+      <h1 class="form-title">Contact Buurtgenoot!</h1>
+      <input type="text" placeholder="Name" required>
+      <input type="text" placeholder="Email" required>
+      <textarea id="text" name="text" rows="5" cols="33">Hoi Buurtgenoot!</textarea>
+            <div class="btn-box">
+                <button type="button">Terug</button>
+                <button type="button">Volgende</button>
+            </div>
+    </form>
+
+  
+      
+
+    
+  </main>
+
+
+
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="./Contact form.js"></script>
+</body>
+
+</html>

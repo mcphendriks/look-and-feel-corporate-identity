@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruil platform voor stekjes - Buurtcampus</title>
+  </head>
+</html>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <a href="" class="nav-bar-logo">
+        <img
+          src="https://hvacommunity.sirv.com/Buurtcampus%20Oost-logo.svg"
+          alt="plant" />
+      </a>
+      <ul class="nav-bar-li">
+        <li class="nav-bar-item">
+          <a href="/">Stek Plaatsen</a>
+        </li>
+        <li class="nav-bar-item">
+          <a href="plant-match.html">Stek Match</a>
+        </li>
+      </ul>
+      <!-- Hamburger menu -->
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section-home">
+    <img src="assets/leaf.png" alt="background plant" />
+    <div class="section-home-content">
+      <h1>Stekje Ruilen?</h1>
+      <h2>
+        De onderstaande stekjes zijn momenteel beschikbaar in de stekjes bieb.
+        Heb je nog geen stekje? geen zorgen er worden ook gratis stekjes
+        weggegeven
+      </h2>
+    </div>
+  </section>
+
+  <!--Main -->
+  <div class="title-main">
+  <h1>Makkelijk verzorging</h1>
+  </div>
+  
+    <main class="main-container">
+<!-- Aside menu select checkbox -->
+      <aside class="select-menu">
+        <h1>Filter:</h1>
+        <div class="select-inner">
+          <div class="select-btn">
+            <span class="btn-text"
+              ><i class="fa-regular fa-hand-holding-seedling"></i
+              >Verzorging</span>
+            <span class="arrow-dwn">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+          </div>
+<!-- checkbox easy -->
+          <ul class="list-items">
+            <li class="item">
+                <input type="checkbox" id="easy-filter" value="easy">
+                <label for="easy-filter">Makkelijk</label>
+              </li>
+<!-- checkbox hard -->
+            <li class="item">
+              <input type="checkbox" id="hard-filter" value="hard">
+              <label for="easy-filter">Moeilijk</label>
+            </li>
+          </ul>
+      </aside>
+
+      
+      <!-- Section list plants -->
+      <section class="section-plant">
+       <!-- card 1 -->
+      <div class="card-plant" class="easy">
+        <img
+          src="https://www.plantje.nl/wp-content/uploads/2021/09/Bonsai-Ficus-Ginseng-p17-2-600x600.jpg.webp"
+          class="card-plant-img"
+          alt="plant image" />
+        <div class="card-plant-overlay">
+          <div class="card-plant-content">
+            <h1 class="card-plant-title">Plant</h1>
+            <div class="card-plant-icon">
+              <img
+                src="assets/assets-home-page/house-icon_white.png"
+                alt="house-icon" />
+              <p>Binnen plant</p>
+              <img
+                src="assets/assets-home-page/drops-icon.png"
+                alt="drops-icon" />
+              <p>Weinig Water</p>
+            </div>
+            <a href="/"
+              ><button class="card-plant-btn" role="button">
+                Plantje Ruilen
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!--card 2-->
+      <div class="card-plant" class="hard">
+        <img
+          src="https://www.plantje.nl/wp-content/uploads/2021/09/Bonsai-Ficus-Ginseng-p17-2-600x600.jpg.webp"
+          class="card-plant-img"
+          alt="plant" />
+        <div class="card-plant-overlay">
+          <div class="card-plant-content">
+            <h1 class="card-plant-title">Plant</h1>
+            <div class="card-plant-icon">
+              <img
+                src="assets/assets-home-page/house-icon_white.png"
+                alt="house-icon" />
+              <p>Binnen plant</p>
+              <img
+                src="assets/assets-home-page/drops-icon.png"
+                alt="drops-icon" />
+              <p>Weinig Water</p>
+            </div>
+            <a href="/"
+              ><button class="card-plant-btn" role="button">
+                Plantje Ruilen
+              </button></a>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+</main>
+
+<!-- footer -->
+
+  <footer class="ft-section">
+    <section class="ft-section-rows">
+      <div class="ft-section-item">
+        <img
+          src="https://hvacommunity.sirv.com/Buurtcampus%20Oost-logo.svg"
+          alt="logo buurtcampus" />
+      </div>
+      <ul class="ft-section-item">
+        <li class="footer-item"><a href="/">Verzorging plant</a></li>
+        <li class="footer-item">
+          <a href="/">Meer contact met Buurtbewoner</a>
+        </li>
+        <li class="footer-item"><a href="/">Workshops plant</a></li>
+        <li class="footer-item"><a href="/">Veel gestelde vragen</a></li>
+        <li class="footer-item"><a href="/">Privacy</a></li>
+        <li class="footer-item"><a href="/">Voorwaarden</a></li>
+      </ul>
+      <div class="ft-section-item">
+        <h3>Plantje ophalen of ruilen?</h3>
+        <p>Ruil je plantje in de OBA in Amsterdam-Oost:</p>
+        <!-- <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.673674547208!2d4.924028314454289!3d52.358203579783876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6097132bffcc7%3A0x290544c1d1a9e37c!2sOBA%20Linnaeus!5e0!3m2!1snl!2snl!4v1670170423601!5m2!1snl!2snl"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+      </div>
+      <div class="ft-section-item"></div>
+    </section>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
