@@ -54,6 +54,7 @@ body {
   padding: 1rem;
   overflow: hidden;
   margin-top: 1rem;
+  border-radius: 5px;
 }
 
 .main-form h1 {
@@ -61,16 +62,63 @@ body {
   margin: 0 auto;
   color: rgb(72, 89, 72);
   font-size: 32px;
+  border-radius: 5px;
 }
 
-fieldset {
+.main-form fieldset {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 1rem;
   border: none;
   transition: all 3s;
-  padding: 1rem 1rem 0;
+  padding: 1rem 1rem 1rem;
   position: relative;
   background-color: rgb(209, 217, 210);
+  border-radius: 5px;
+}
+.form-file div {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  outline: dashed 1px;
+  padding: 5rem 5rem 0;
+  border-radius: 5px;
+}
+
+.form-file p {
+  font-size: 16px;
+  color: #7e8f7b;
+  margin-bottom: 4rem;
+  margin-top: 0.5rem;
+}
+
+.form-file div:hover {
+  background-color: rgb(185, 202, 187);
+}
+
+[type="file"] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+[type="file"] + label {
+  background: #475844;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  padding: 1rem 1rem;
+  position: relative;
+  transition: box-shadow 0.3s;
+}
+
+.file-btn i {
+  padding: 0 1rem 0 1rem;
+}
+.file-btn:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }

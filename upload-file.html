@@ -2,33 +2,13 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="styles/upload-file.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Upload-file</title>
   </head>
   <body>
-    <!-- <header>
-      <nav class="top-nav">
-        <a href="" class="nav-bar-logo">
-          <img
-            src="https://hvacommunity.sirv.com/Buurtcampus%20Oost-logo.svg"
-            alt="plant" />
-        </a>
-        <ul class="nav-bar-li">
-          <li class="nav-bar-item">
-            <a href="/">Stek Plaatsen</a>
-          </li>
-          <li class="nav-bar-item">
-            <a href="plant-match.html">Stek Match</a>
-          </li>
-        </ul>
-       Hamburger menu
-        <div class="menu-icon" onclick="toggleMenu()">
-          <i class="fa fa-bars"></i>
-        </div>
-      </nav>
-    </header> -->
     <header>
       <nav class="top-nav">
         <div>
@@ -49,28 +29,27 @@
     <main class="main-form">
       <h1>Plant Plaatsen</h1>
       <form>
-        <fieldset>
-          <label for="file">Afbeedling uploaden</label>
-          <input type="file" name="file">
+        <fieldset class="form-file">
+          <div class="form-file-upload">
+         <input type="file" id="file-upload">
+         <label for="file-upload" class="file-btn"><i class="fa fa-upload"></i>Upload afbeedling</label>
+         <p>Kies een afbeelding of sleep het hierheen</p>
+        </div>
         </fieldset>
-        <fieldset>
+        
+        <fieldset class="form-text">
           <label for="name">Naam Plant:</label>
           <input type="text" name="name">
-
-          <label for="text">Beschrijving plant</label>j
+          <label for="text">Beschrijving plant</label>
           <textarea>De plant is nog maar 1 week oud, helaas door de allergie van mijn poezen moet ik de plant weg doen.</textarea>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="form-checkbox">
          <legend>Verzorging plant</legend>
-         <label class="form-checkbox"><p>Makkelijk</p>
-          <input type="checkbox">
-         </label>
-         <label class="form-checkbox"><p>Moeilijk</p>
-          <input type="checkbox">
-         </label>
-         
-
+         <input type="checkbox">
+         <label class="form-checkbox"><p>Makkelijk</p></label>
+         <input type="checkbox">
+         <label class="form-checkbox"><p>Moeilijk</p></label>
         </fieldset>
       </form>
      
