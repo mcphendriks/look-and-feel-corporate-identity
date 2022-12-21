@@ -15,34 +15,52 @@ selectBtn.addEventListener("click", () => {
 // Responsible for the multi-select checkboxes, to select plants on care difficulty
 
 // Responsible to get the checkbox 
-const easyFilter = document.getElementById('easy-filter')
-const hardFilter = document.getElementById('hard-filter')
+let plantsCards = document.querySelectorAll(".card-plant") 
+let easyCheckbox = document.querySelector('input.easy-checkbox')
+let hardCheckbox = document.querySelector('input.hard-checkbox')
 
-console.log(easyFilter,hardFilter)
+console.log(plantsCards,easyCheckbox,hardCheckbox)
 
-const plants = document.querySelectorAll('.card-plant')
+checkboxEasy.addEventListener("change", () => {
+ plants.forEach(plant => {  
+    if(plant.classList.contains("easy")) { 
+        plant.classList.toggle("active"); 
+         }
+         }) 
+        })
+         
+checkboxHard.addEventListener("change", () => { 
+   plants.forEach(plant => {   
+    if(plant.classList.contains("hard")) {      
+        plant.classList.toggle("active");    
+      } }) 
+    }) 
 
-console.log(plants)
 
-easyFilter.addEventListener('change', () => {
-  plants.forEach(plant => {
-    if (plant.classlist.contains('easy')) 
-    {
-      plant.style.display = 
-      easyFilter.checked ? 'block' : 'none';
-    }
-  })
-})
 
-hardFilter.addEventListener('change', () => {
-  plants.forEach(plant => {
-    if (plant.classlist.contains('hard'))
-    {
-      plant.style.display =
-      hardFilter.checked ? 'block' : 'none'
-    }
-  } )
-})
+
+
+// const plants = document.querySelectorAll('.card-plant')
+// // console.log(plants)
+// easyFilter.addEventListener('change', () => {
+//   plants.forEach(plant => {
+//     if (plant.classList.contains('easy')) 
+//     {
+//       easyFilter.checked ? plant.style.display = 'block' : plant.style.display ='none';
+//     }
+//   })
+// })
+
+// hardFilter.addEventListener('change', () => {
+//   const card = document.getElementsByClassName('hard');
+//   if (this.checked) {
+//     card.forEach(Card => card.style.display = 'block');
+//   } else {
+//     card.forEach(Card => card.style.display = 'none');
+//   }
+// });
+
+  
 
 
 

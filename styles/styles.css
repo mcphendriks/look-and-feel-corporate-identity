@@ -235,16 +235,6 @@ body {
 
 /* Responsible for the card-plants */
 
-/* display plant cards */
-
-.card-plant.easy {
-  display: block;
-}
-
-.card-plant.hard {
-  display: block;
-}
-
 .section-plant {
   display: flex;
   flex-direction: row;

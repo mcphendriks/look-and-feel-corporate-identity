@@ -58,13 +58,6 @@ body {
   border-radius: 5px;
 }
 
-.main-form form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-}
-
 .main-form h1 {
   display: flex;
   margin: 0 auto;
@@ -73,10 +66,12 @@ body {
   border-radius: 5px;
 }
 
+/* Responsible for all fieldsets  */
+
 .main-form fieldset {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: center; */
+  justify-content: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: none;
@@ -86,11 +81,13 @@ body {
   background-color: rgb(209, 217, 210);
   border-radius: 5px;
 }
+
+/* Responsible for the dash outline for drag and drop */
 .form-file div {
   margin: 0 auto;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: center; */
+  justify-content: center;
   outline: dashed 1px;
   padding: 5rem 5rem 0;
   border-radius: 5px;
@@ -147,6 +144,9 @@ label[for="text"] {
   color: rgb(72, 89, 72);
   font-weight: 500;
 }
+/* input[type="email"]:valid { -> OEFENEN
+ 
+} */
 
 input:focus-visible,
 textarea:focus-visible {
@@ -164,11 +164,11 @@ textarea:focus-visible {
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
-  /* display: flex;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: flex;
   margin: 0 auto;
   flex-direction: column;
-  justify-content: center; */
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  justify-content: center;
 }
 
 .main-form button:hover {
@@ -178,13 +178,12 @@ textarea:focus-visible {
 }
 
 .main-form a {
-  color: green;
+  color: #333467;
   text-decoration: none;
   cursor: pointer;
   padding-top: 2rem;
+  font-weight: 600;
   display: flex;
-  /* margin: 0 auto;
   flex-direction: column;
-  text-align: center; */
-  font-weight: 500;
+  text-align: center;
 }
