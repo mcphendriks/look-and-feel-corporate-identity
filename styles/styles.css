@@ -233,6 +233,10 @@ body {
   transform: all 0.3s ease-in-out;
 }
 
+.card-plant.active {
+  display: block;
+}
+
 /* Responsible for the card-plants */
 
 .section-plant {
@@ -251,6 +255,14 @@ body {
   width: 31%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5px;
+}
+
+.easy {
+  display: none;
+}
+
+.hard {
+  display: none;
 }
 
 .card-plant-overlay {

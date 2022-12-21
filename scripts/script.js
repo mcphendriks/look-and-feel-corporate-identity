@@ -15,25 +15,24 @@ selectBtn.addEventListener("click", () => {
 // Responsible for the multi-select checkboxes, to select plants on care difficulty
 
 // Responsible to get the checkbox 
-let plantsCards = document.querySelectorAll(".card-plant") 
+var plantsCards = document.querySelectorAll(".card-plant") 
 let easyCheckbox = document.querySelector('input.easy-checkbox')
 let hardCheckbox = document.querySelector('input.hard-checkbox')
 
 console.log(plantsCards,easyCheckbox,hardCheckbox)
 
-checkboxEasy.addEventListener("change", () => {
- plants.forEach(plant => {  
+easyCheckbox.addEventListener("click", () => {
+ plantsCards.forEach(plant => {  
     if(plant.classList.contains("easy")) { 
-        plant.classList.toggle("active"); 
-         }
-         }) 
+        plant.classList.toggle("active") 
+         }}) 
         })
          
-checkboxHard.addEventListener("change", () => { 
-   plants.forEach(plant => {   
+hardCheckbox.addEventListener("click", () => { 
+   plantsCards.forEach(plant => {   
     if(plant.classList.contains("hard")) {      
-        plant.classList.toggle("active");    
-      } }) 
+        plant.classList.toggle("active")   
+      }}) 
     }) 
 
 
