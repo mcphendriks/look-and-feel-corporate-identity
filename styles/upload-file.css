@@ -1,3 +1,17 @@
+:root {
+  --primary-clr: #4e7141;
+  --secondary-clr: #333467;
+  --tertiary-clr: #f26f21;
+  --white-clr: #fff;
+  --radius-value: 5px;
+  --text-color: #000;
+  --font-name: arial, helvetica, sans-serif;
+  --line-height: 1.5rem;
+  --font-weight: bold;
+  --background-code-clr: #d6d6e1;
+  --box-shhw: 1px 0 10px rgba(0, 0, 0, 0.15);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,17 +19,17 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(72, 89, 72);
+  font-family: var(--font-name);
+  background-color: var(--primary-clr);
 }
 
 .top-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
-  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.15);
-  color: #333565;
+  background-color: var(--background-code-clr);
+  box-shadow: var(--box-shdw);
+  color: var(--secondary-clr);
 }
 
 .top-nav a,
@@ -43,13 +57,17 @@ body {
   transition: 0.3s ease;
 }
 
+.active {
+  color: #e2793b;
+}
+
 /* MAIN FORM  */
 .main-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   transition: all 0.2s;
-  background-color: white;
+  background-color: var(--background-code-clr);
   max-width: 30rem;
   margin: 0 auto;
   padding: 1rem;
@@ -61,9 +79,9 @@ body {
 .main-form h1 {
   display: flex;
   margin: 0 auto;
-  color: rgb(72, 89, 72);
+  color: var(--primary-clr);
   font-size: 32px;
-  border-radius: 5px;
+  border-radius: var(--radius-value);
 }
 
 /* Responsible for all fieldsets  */
@@ -111,9 +129,9 @@ body {
 }
 
 [type="file"] + label {
-  background: #475844;
+  background: var(--primary-clr);
   border-radius: 5px;
-  color: #fff;
+  color: var(--background-code-clr);
   cursor: pointer;
   display: inline-block;
   outline: none;
@@ -135,7 +153,7 @@ textarea {
   border-radius: 5px;
   background-color: #f1f8ef;
   font-style: italic;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-name);
   padding: 0.5rem;
 }
 
@@ -150,8 +168,8 @@ label[for="text"] {
 
 input:focus-visible,
 textarea:focus-visible {
-  outline: 1px solid #475844;
-  border-radius: 3px;
+  outline: 1px solid var(--primary-clr);
+  border-radius: var(--radius-value);
 }
 
 /* BUTTON  */
@@ -159,12 +177,12 @@ textarea:focus-visible {
 .main-form button {
   background-color: #333467;
   border: none;
-  color: white;
+  color: var(--white-clr);
   padding: 1rem;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: var(--radius-value);
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: var(--box-shdw);
   display: flex;
   margin: 0 auto;
   flex-direction: column;
@@ -172,16 +190,16 @@ textarea:focus-visible {
 }
 
 .main-form button:hover {
-  background: #e2793b;
+  background: var(--tertiary-clr);
   transform: translateY(-0.25em);
   transition: all 0.25s;
 }
 
 .main-form a {
-  color: #333467;
+  color: var(--secondary-clr);
   text-decoration: none;
   cursor: pointer;
-  padding-top: 2rem;
+  margin-top: 0.5rem;
   font-weight: 600;
   display: flex;
   flex-direction: column;
